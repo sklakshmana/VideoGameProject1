@@ -1,33 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="5123" started-at="2020-12-24T13:25:37Z" finished-at="2020-12-24T13:25:42Z">
+  <suite name="Suite" duration-ms="8567" started-at="2021-01-31T07:09:42Z" finished-at="2021-01-31T07:09:51Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="5123" started-at="2020-12-24T13:25:37Z" finished-at="2020-12-24T13:25:42Z">
-      <class name="testCases.TC_VideoGameAPI">
-        <test-method status="PASS" signature="test_getAllVideoGames()[pri:1, instance:testCases.TC_VideoGameAPI@1ce4f0a]" name="test_getAllVideoGames" duration-ms="3595" started-at="2020-12-24T13:25:37Z" finished-at="2020-12-24T13:25:40Z">
+    <test name="Test" duration-ms="8567" started-at="2021-01-31T07:09:42Z" finished-at="2021-01-31T07:09:51Z">
+      <class name="testCases.TC_reqres">
+        <test-method status="PASS" signature="addnewUser()[pri:0, instance:testCases.TC_reqres@4ed9f0]" name="addnewUser" duration-ms="5091" started-at="2021-01-31T07:09:42Z" finished-at="2021-01-31T07:09:47Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test_getAllVideoGames -->
-        <test-method status="PASS" signature="test_addNewVoideoGame()[pri:2, instance:testCases.TC_VideoGameAPI@1ce4f0a]" name="test_addNewVoideoGame" duration-ms="611" started-at="2020-12-24T13:25:40Z" finished-at="2020-12-24T13:25:41Z">
+        </test-method> <!-- addnewUser -->
+        <test-method status="PASS" signature="getUser()[pri:0, instance:testCases.TC_reqres@4ed9f0]" name="getUser" duration-ms="993" started-at="2021-01-31T07:09:47Z" finished-at="2021-01-31T07:09:48Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test_addNewVoideoGame -->
-        <test-method status="PASS" signature="test_getVideoGame()[pri:3, instance:testCases.TC_VideoGameAPI@1ce4f0a]" name="test_getVideoGame" duration-ms="675" started-at="2020-12-24T13:25:41Z" finished-at="2020-12-24T13:25:42Z">
+        </test-method> <!-- getUser -->
+        <test-method status="PASS" signature="getUsers()[pri:0, instance:testCases.TC_reqres@4ed9f0]" name="getUsers" duration-ms="372" started-at="2021-01-31T07:09:48Z" finished-at="2021-01-31T07:09:49Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test_getVideoGame -->
-        <test-method status="PASS" signature="test_updateVideoGame()[pri:4, instance:testCases.TC_VideoGameAPI@1ce4f0a]" name="test_updateVideoGame" duration-ms="104" started-at="2020-12-24T13:25:42Z" finished-at="2020-12-24T13:25:42Z">
+        </test-method> <!-- getUsers -->
+        <test-method status="PASS" signature="testDelete()[pri:0, instance:testCases.TC_reqres@4ed9f0]" name="testDelete" duration-ms="676" started-at="2021-01-31T07:09:49Z" finished-at="2021-01-31T07:09:49Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test_updateVideoGame -->
-        <test-method status="PASS" signature="test_DeleteVideoGame()[pri:5, instance:testCases.TC_VideoGameAPI@1ce4f0a]" name="test_DeleteVideoGame" duration-ms="38" started-at="2020-12-24T13:25:42Z" finished-at="2020-12-24T13:25:42Z">
+        </test-method> <!-- testDelete -->
+        <test-method status="PASS" signature="testPatch()[pri:0, instance:testCases.TC_reqres@4ed9f0]" name="testPatch" duration-ms="678" started-at="2021-01-31T07:09:49Z" finished-at="2021-01-31T07:09:50Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test_DeleteVideoGame -->
-      </class> <!-- testCases.TC_VideoGameAPI -->
+        </test-method> <!-- testPatch -->
+        <test-method status="PASS" signature="testPut()[pri:0, instance:testCases.TC_reqres@4ed9f0]" name="testPut" duration-ms="641" started-at="2021-01-31T07:09:50Z" finished-at="2021-01-31T07:09:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPut -->
+      </class> <!-- testCases.TC_reqres -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

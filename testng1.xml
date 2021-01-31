@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="2" name="Test">
     <classes>
-      <class name="testCases.TC_reqres"/>
+      <class name="testCases.TC_VideoGameAPI"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

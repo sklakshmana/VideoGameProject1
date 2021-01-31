@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="7.642" tests="5" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="9.112" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_241\jre\bin"/>
@@ -28,7 +28,7 @@
     <property name="os.name" value="Windows 7"/>
     <property name="classworlds.conf" value="C:\apache-maven-3.6.1\bin\..\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_241\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\apache-maven-3.6.1\bin;C:\apache-maven-3.6.1\/bin;C:\Program Files\Java\jdk1.8.0_241\bin;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_241\\bin;C:\Program Files\Java\jdk1.8.0_241\\lib;C:\Windows\system32;C:\Users\xyz\AppData\Roaming\nvm;C:\Program Files\nodejs;E:\2019\pavanonlinetrainings\gradle-5.6.2-all\gradle-5.6.2\bin;C:\apache-maven-3.6.1\bin;C:\apache-maven-3.6.1\/bin;C:\Program Files\Java\jdk1.8.0_241\bin;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_241\\bin;C:\Program Files\Java\jdk1.8.0_241\\lib;C:\Windows\system32;C:\Users\xyz\AppData\Roaming\nvm;C:\Program Files\nodejs;E:\2019\pavanonlinetrainings\gradle-5.6.2-all\gradle-5.6.2\bin;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_241\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\apache-maven-3.6.1\bin;C:\apache-maven-3.6.1\/bin;C:\Program Files\Java\jdk1.8.0_241\bin;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_241\\bin;C:\Program Files\Java\jdk1.8.0_241\\lib;C:\Windows\system32;C:\Users\xyz\AppData\Roaming\nvm;C:\Program Files\nodejs;E:\2019\pavanonlinetrainings\gradle-5.6.2-all\gradle-5.6.2\bin;C:\Users\xyz\AppData\Roaming\npm;C:\apache-maven-3.6.1\bin;C:\apache-maven-3.6.1\/bin;C:\Program Files\Java\jdk1.8.0_241\bin;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_241\\bin;C:\Program Files\Java\jdk1.8.0_241\\lib;C:\Windows\system32;C:\Users\xyz\AppData\Roaming\nvm;C:\Program Files\nodejs;E:\2019\pavanonlinetrainings\gradle-5.6.2-all\gradle-5.6.2\bin;C:\Users\xyz\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\xyz\AppData\Roaming\Roaming\npm;."/>
     <property name="maven.conf" value="C:\apache-maven-3.6.1\bin\../conf"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
@@ -64,9 +64,10 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
   </properties>
-  <testcase name="test_getAllVideoGames" classname="testCases.TC_VideoGameAPI" time="3.347"/>
-  <testcase name="test_addNewVoideoGame" classname="testCases.TC_VideoGameAPI" time="0.628"/>
-  <testcase name="test_getVideoGame" classname="testCases.TC_VideoGameAPI" time="0.525"/>
-  <testcase name="test_updateVideoGame" classname="testCases.TC_VideoGameAPI" time="0.113"/>
-  <testcase name="test_DeleteVideoGame" classname="testCases.TC_VideoGameAPI" time="3.029"/>
+  <testcase name="addnewUser" classname="testCases.TC_reqres" time="5.635"/>
+  <testcase name="getUser" classname="testCases.TC_reqres" time="0.948"/>
+  <testcase name="getUsers" classname="testCases.TC_reqres" time="0.682"/>
+  <testcase name="testDelete" classname="testCases.TC_reqres" time="0.429"/>
+  <testcase name="testPatch" classname="testCases.TC_reqres" time="0.718"/>
+  <testcase name="testPut" classname="testCases.TC_reqres" time="0.7"/>
 </testsuite>

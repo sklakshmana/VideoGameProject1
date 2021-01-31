@@ -6,22 +6,25 @@ import org.testng.annotations.Test;
 import io.restassured.response.Response;
 
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.*;
 
 import java.util.HashMap;
 
-public class TC_VideoGameAPI {
+public class TC_VideoGameAPI {	
+	//given -- precondition	
+	//when -- test steps	
+	//then -- checking the validation
 	
 	@Test(priority=1)
 	public void test_getAllVideoGames()
 	{
 		given()
-		
+			.contentType("application/json")
 		.when()
 			.get("http://localhost:9000/app/videogames")
-			
 		.then()
-			.statusCode(200);
+			.statusCode(200)
+			.log().body();
 	}
 	@Test(priority=2)
 	public void test_addNewVoideoGame()
@@ -34,8 +37,7 @@ public class TC_VideoGameAPI {
 		data.put("category", "Adventure");
 		data.put("rating", "Universal");
 		
-		//connection.header("Accept", "application/xml;version=1");
-		
+				
 		Response res=
 			given()
 				.contentType("application/json")
@@ -53,24 +55,13 @@ public class TC_VideoGameAPI {
 	}
 	
 	@Test(priority=3)
-	public void test_getVideoGame()
-	{
-		given()
-		.when()
-			.get("http://localhost:9000/app/videogames/101")
-		.then()
-			.statusCode(200)
-			.body("videoGame.id", equalTo("101"));
-			//.body("videoGame.name", equalTo("Spider-Man"));
-	}
-	@Test(priority=4)
-	public void test_updateVideoGame()
+	public void updateVideoGame()
 	{
 		HashMap data=new HashMap();
 		data.put("id", "101");
 		data.put("name", "Pacman");
 		data.put("releaseDate", "2020-10-01");
-		data.put("reviewScore", "4");
+		data.put("reviewScore", "5");
 		data.put("category", "Adventure");
 		data.put("rating", "Universal");
 		
@@ -81,24 +72,44 @@ public class TC_VideoGameAPI {
 			.put("http://localhost:9000/app/videogames/101")
 		.then()
 			.statusCode(200)
-			.log().body()
-			.body("videoGame.id", equalTo("101"))
-			.body("videoGame.name", equalTo("Pacman"));		
+			.log().body();
+		
 	}
+	
+	@Test(priority=4)
+	public void test_getVideoGame()
+	{
+		given()
+		
+		.when()
+			.get("http://localhost:9000/app/videogames/101")
+		.then()
+			.statusCode(200)
+			.log().body();
+	}
+	
 	@Test(priority=5)
-	public void test_DeleteVideoGame() throws InterruptedException
+	public void test_DeleteVideoGame()
 	{
 		Response res=
 		given()
+			.contentType("application/json")
 		.when()
 			.delete("http://localhost:9000/app/videogames/101")
 		.then()
 			.statusCode(200)
 			.log().body()
 			.extract().response();
-		Thread.sleep(3000);
+		
 		String jsonString=res.asString();
 		Assert.assertEquals(jsonString.contains("Record Deleted Successfully"), true);
 	}
+	
+	
+	
+	
+	
+	
+	
 
 }
